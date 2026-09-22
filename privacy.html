@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad — Marcadores con PIN</title>
+<link rel="icon" href="assets/favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap legal">
+  <a class="back" href="index.html">&larr; Marcadores con PIN</a>
+  <h1>Política de privacidad</h1>
+  <p class="updated">Última actualización: 22 de septiembre de 2026</p>
+
+  <p>Esta política explica qué datos maneja la extensión de Chrome <strong>Marcadores con PIN</strong> (versión
+  gratuita y versión Premium) y qué hace con ellos.</p>
+
+  <h2>Resumen</h2>
+  <ul>
+    <li>Todo lo que proteges con la extensión se guarda <strong>en tu propio ordenador</strong>, dentro del
+    almacenamiento de la propia extensión.</li>
+    <li>Tu PIN nunca se guarda en texto plano: solo se guarda un valor derivado de él (hash con sal, PBKDF2), que
+    no se puede usar para recuperar el PIN original.</li>
+    <li><strong>No vendemos ni compartimos tus datos</strong> con nadie. No hay analítica ni rastreo de tu
+    actividad de navegación.</li>
+    <li>La extensión no tiene servidor propio. Los únicos servicios externos con los que se comunica son el
+    proveedor de pago (para comprobar una licencia Premium) y, si tú lo activas, la sincronización de tu propia
+    cuenta de Chrome.</li>
+  </ul>
+
+  <h2>Qué datos se guardan y dónde</h2>
+  <p><strong>En tu ordenador (chrome.storage.local, privado de este dispositivo):</strong></p>
+  <ul>
+    <li>El hash de tu PIN (no el PIN en sí).</li>
+    <li>Las direcciones de los marcadores que proteges y el contenido de las carpetas que ocultas.</li>
+    <li>Tus preferencias: idioma, icono elegido, minutos que una carpeta queda abierta, etc.</li>
+    <li>Si compras Premium, la clave de licencia y los datos que devuelve el proveedor de pago al activarla
+    (plan, fecha de renovación y el correo con el que compraste, si el proveedor lo facilita).</li>
+  </ul>
+  <p><strong>En tu cuenta de Chrome (solo si activas la sincronización Premium):</strong></p>
+  <ul>
+    <li>Una copia de tus marcadores y carpetas protegidos, <strong>cifrada en tu propio ordenador</strong> antes
+    de subirse (AES-256, con una clave derivada de tu PIN). Nosotros no tenemos tu PIN ni la clave de cifrado, por
+    lo que no podemos leer esa copia. Se guarda a través de la sincronización de Chrome de Google, sujeta a la
+    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">política de privacidad de
+    Google</a>.</li>
+  </ul>
+
+  <h2>Comprobación de la licencia Premium</h2>
+  <p>Cuando activas una clave de licencia, la extensión la envía por HTTPS al proveedor de pago (Lemon Squeezy o
+  Gumroad, según el caso) para comprobar que es válida. La extensión no envía ningún otro dato tuyo en esa
+  petición. El proveedor de pago procesa tu compra y factura como comerciante registrado (Merchant of Record); su
+  tratamiento de tus datos de compra (nombre, email, datos de pago) se rige por su propia política de privacidad:
+  <a href="https://www.lemonsqueezy.com/privacy" target="_blank" rel="noopener">Lemon Squeezy</a> ·
+  <a href="https://gumroad.com/privacy" target="_blank" rel="noopener">Gumroad</a>.</p>
+
+  <h2>Permisos que pide la extensión y para qué</h2>
+  <ul>
+    <li><strong>bookmarks</strong>: leer y modificar tus marcadores, para poder protegerlos y ocultarlos.</li>
+    <li><strong>storage</strong>: guardar tus ajustes y el contenido protegido en tu dispositivo.</li>
+    <li><strong>tabs</strong> y <strong>webNavigation</strong>: mostrar la pantalla del PIN cuando abres un
+    marcador o carpeta protegidos.</li>
+    <li><strong>alarms</strong>: volver a ocultar una carpeta automáticamente pasado el tiempo elegido.</li>
+    <li><strong>favicon</strong>: mostrar el icono de cada web junto a su marcador.</li>
+    <li><strong>Acceso a api.lemonsqueezy.com y api.gumroad.com</strong>: comprobar tu clave de licencia
+    Premium.</li>
+  </ul>
+
+  <h2>Qué no hacemos</h2>
+  <ul>
+    <li>No usamos cookies ni herramientas de analítica o publicidad.</li>
+    <li>No accedemos al contenido de las webs que visitas ni a tu historial de navegación.</li>
+    <li>No compartimos ni vendemos datos a terceros con fines comerciales.</li>
+  </ul>
+
+  <h2>Si desinstalas la extensión</h2>
+  <p>Al desinstalar la extensión se borra todo lo que guarda en tu dispositivo, incluido el contenido de las
+  carpetas ocultas. Si tenías carpetas ocultas, la propia extensión te avisa de que las muestres de nuevo (o
+  descargues una copia) antes de desinstalarla, porque ese contenido solo existe dentro de ella.</p>
+
+  <h2>Tus derechos</h2>
+  <p>Como todos los datos se guardan en tu propio dispositivo (o en tu propia cuenta de Chrome, cifrados), tienes
+  control directo sobre ellos: puedes borrarlos en cualquier momento desde la propia extensión o desinstalándola.
+  Para cualquier consulta sobre esta política, escríbenos a
+  <a href="mailto:divininoso@gmail.com">divininoso@gmail.com</a>.</p>
+
+  <h2>Cambios en esta política</h2>
+  <p>Si actualizamos esta política, cambiaremos la fecha de arriba. Los cambios importantes se anunciarán también
+  en la propia extensión.</p>
+</div>
+</body>
+</html>
